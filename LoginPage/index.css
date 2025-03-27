@@ -2,186 +2,101 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+    font-family: 'Roboto', sans-serif;
 }
 body{
-    background-image: url('fastfood.png');
-    background-repeat: no-repeat;
-    background-size:cover;
-    
-}
-@keyframes slideInFromTop {
-    0% {
-        transform: translateY(-100%);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
-
-body::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.5); /* White overlay with 50% opacity */
-    z-index: -1;
-}
-a{
-    text-decoration: none;
-    color: white;
-}
-.screeen{
     display: flex;
     justify-content: center;
-    animation: slideInFromTop 2s ease-out;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #666565;
 }
-
-#container{
-    height: 60vh;
-    width: 60vw;
-    margin-top: 10%;
-    border: 2px rgb(244, 241, 241) solid;
-    border-radius: 10px;
+.login-box{
+    border: 2px black solid;
     display: flex;
-    justify-content:space-around;
-}
-.imagebox{
-    width: 40%;
-    height: 100%;
-    
-}
-#loginbox{
-    width: 40%;
-    border: 2px solid rgb(242, 242, 242);
-    background-color: #212529;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    border-radius: 10px; 
-}
-#loginbox form h1{
+    justify-content: center;
+    align-items: center;
     color: white;
-    text-align: center;
-    margin-top: 3%;
 }
-.forget{
+.image-box{
+    border: 2px black solid;
+}
+.logo{
+    border: 2px black solid;
+
+}
+.beverage{
+    border: 2px black solid;
+}
+.login-form{
+    border: 2px black solid;
+    padding: 20px;
+}
+.login-form-box h1{
+    text-align: center;
+    margin-bottom: 20px;
+    /* color: white; */
+}
+.login-form-box input{
+    width: 100%;
+    padding: 10px;
+    margin: 1px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+.forgot-password {
     display: flex;
     justify-content: end;
-    margin-top: 2%;
 }
-
-.textbox label{
-    color: white;
-    margin-left: 2%; 
-}
-.textbox input{
-    width: 90%;
-    height: 30px;
-    margin-left: 5%;
-    border-radius: 5px;
-    outline: none;
+.forgot-password span a{
+    text-decoration: none;
+    color:white;
     
 }
-.signbox{
-    margin-top: 5%;
-}
-.btn{
-    width:90%;
-    height: 40px;
-    border-radius: 5px;
-    margin-left: 5%;
-    font-size: medium;
-    background-color: chocolate;
-    cursor: pointer;
-}
-.btn:hover{
-    background-color: #ff7f50;
-}
-
-.signbox span{
-    color: white;
-    margin-left: 30%;
-}
-
-.social-media {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 5%;
-    height: 40px;
-    cursor: pointer;
-    
-    
-}
-#goggle, #facebook ,#github{
-    width: 30%;
-    background-color: white;
-    border-radius: 30px;
-}
-.social-media div i{
-    font-size: 30px;
-    margin-top: 4%;
-    margin-left: 30%;
-}
-.extra{
-    margin-top: 5%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    color: white;
-}
-
-
-@media screen and (max-width: 768px){
-    #container{
-        height: 70vh;
-        width: 80vw;
-        margin-top: 10%;
-        border: 2px rgb(244, 241, 241) solid;
-        border-radius: 10px;
-        display: flex;
-        justify-content:space-around;
-    }
-    .imagebox{
-        width: 40%;
-        height: 40%;
-        
-    }
-    .imagebox img{
-        width: 100%;
-        height: 100%;
-    }
-    #loginbox{
-        width: 50%;
-        height: 80%;
-        border: 2px solid rgb(242, 242, 242);
-        background-color: #212529;
-        margin-top: 2%;
-        margin-bottom: 2%;
-        border-radius: 10px; 
-    }
-}
-
-@media screen and (max-width: 600px){
-
-    #container{
-        height: 60vh;
-        width: 60vw;
-        margin-top: 10%;
-    
-        border: 2px rgb(244, 241, 241) solid;
-        border-radius: 10px;
-        display: flex;
-        justify-content: center;
-    }
-#loginbox{
+.login-form-box button{
     width: 100%;
-    height: 90%;
-    border: 2px solid rgb(242, 242, 242);
-    background-color: #212529;
-    margin-top: 2%;
-    margin-bottom: 4%;
-    border-radius: 10px; 
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+    background-color: chocolate;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    font-size: 20px;
 }
+.or-continue-with{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0px;
+}
+.social-media{
+    display: flex;
+    justify-content: space-evenly;
+     
+}
+.social-media button{
+    margin: 10px ;
+    padding: 10px;
+    border-radius: 50px;
+    border: none;
+    width: 80%;
+    background-color: whitesmoke;
+    cursor: pointer;
+    outline: none;
+    font-size: 20px;
+}
+.register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0 ;
+}
+.register a{
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+    
 }
