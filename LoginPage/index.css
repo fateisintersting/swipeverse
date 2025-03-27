@@ -9,28 +9,45 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #666565;
+    background-color: rgba(0,0, 0,0.1);
+    background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9));
+    
+}
+.background{
+    
+    background-image: url('fastfood.png');
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+
+  
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  
 }
 .login-box{
-    border: 2px black solid;
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px whitesmoke solid;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     color: white;
+    border-radius: 30px;
+    background-color: rgba(0,0,0,0.8);
+    
 }
-.image-box{
-    border: 2px black solid;
-}
-.logo{
-    border: 2px black solid;
 
-}
-.beverage{
-    border: 2px black solid;
-}
+
 .login-form{
-    border: 2px black solid;
+    
     padding: 20px;
+    background-color: rgb(30, 28, 28);
+    border-radius: 20px;
 }
 .login-form-box h1{
     text-align: center;
