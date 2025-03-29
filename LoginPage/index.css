@@ -9,8 +9,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: rgba(0,0, 0,0.1);
-    background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9));
+    background-color: rgba(0, 0, 0, 1);
     
 }
 .background{
@@ -18,9 +17,7 @@ body{
     background-image: url('fastfood.png');
     filter: blur(8px);
     -webkit-filter: blur(8px);
-
-  
-
+    opacity: 0.2;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -42,7 +39,7 @@ body{
    
     color: white;
     border-radius: 30px;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.4);
     
 }
 .logo {
@@ -54,14 +51,14 @@ body{
 }
 .logo img{
     width: 12vw;
-    height: 20vh;
+    height: 25vh;
     
 }
 .beverage {
     
  position: relative;
    bottom: 30px;
-   left: 20px   ;
+   right: 50px;
 }
 .beverage img{
     width: 35vw;
@@ -70,10 +67,10 @@ body{
 
 
 .login-form{
-    width: 20vw;
-    height: 60vh;
+    width: 21vw;
+    height: 58vh;
     padding: 35px;
-    margin-top: 6%;
+    margin-top: 7%;
     
 
     
@@ -96,11 +93,12 @@ body{
     border-radius: 5px;
     border: 1px solid #ccc;
     outline: none;
-    margin: 8px;
+    margin-top: 6px;
 }
 .login-form-box label{
     font-size: 12px;
     font-weight: bold;
+
 }
 .forgot-password {
     display: flex;
@@ -139,6 +137,7 @@ body{
      
 }
 .social-media button{
+    
     margin: 2px ;
     padding: 5px 30px;
     border-radius: 50px;
@@ -161,9 +160,8 @@ body{
     
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1200px){
    
-    
    
 }
     
