@@ -33,7 +33,7 @@ body{
     height: 80vh;
 
     transform: translate(-50%, -50%);
-    border: 2px whitesmoke solid;
+    border: 1px #ccc solid;
     display: flex;
     justify-content: space-evenly;
    
@@ -57,7 +57,7 @@ body{
 .beverage {
     
  position: relative;
-   bottom: 30px;
+   bottom: 45px;
    right: 50px;
 }
 .beverage img{
@@ -89,8 +89,8 @@ body{
 .login-form-box input{
     width: 100%;
     padding: 10px;
-    margin: 1px 0;
-    border-radius: 5px;
+    
+    border-radius: 2px;
     border: 1px solid #ccc;
     outline: none;
     margin-top: 6px;
@@ -100,6 +100,9 @@ body{
     font-weight: bold;
 
 }
+.password-box{
+    margin-top: 20px;
+}
 .forgot-password {
     display: flex;
     justify-content: end;
@@ -108,7 +111,7 @@ body{
 .forgot-password span a{
     text-decoration: none;
     color:white;
-    font-size: 10px;
+    font-size: 8px;
     font-weight: bold;
 }
 .login-form-box button{
@@ -117,7 +120,7 @@ body{
     margin: 10px 0;
     border-radius: 5px;
     border: none;
-    background-color: rgb(201, 60, 21);
+    background-color: rgb(244, 74, 28);
     color: white;
     cursor: pointer;
     outline: none;
@@ -129,7 +132,7 @@ body{
     justify-content: center;
     align-items: center;
     margin: 5px 0px;
-    font-size: 13px;
+    font-size: 10px;
 }
 .social-media{
     display: flex;
@@ -151,9 +154,10 @@ body{
     justify-content: center;
     align-items: center;
     margin: 10px 0 ;
-    font-size: 10px;
+ 
 }
 .register a{
+  
     margin: 5px;
     text-decoration: none;
     color: white;
