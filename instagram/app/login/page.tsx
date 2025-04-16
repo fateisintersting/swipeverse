@@ -10,7 +10,7 @@ export default function page() {
           <div className="text-sm">
             <input
               type="text"
-              placeholder="username, or email"
+              placeholder="username or email"
               className="h-10 w-1/1 text-gray-400 border rounded-tr-md p-2 mb-1"
             />
             <input
@@ -37,7 +37,7 @@ export default function page() {
           </div>
         </div>
         <div className="flex flex-row border text-gray-400 items-center justify-center h-16 mt-4 w-85 ">
-          <p className="text-gray-500">Don't have an account?</p>
+          <p className="text-gray-500">Don&apos;t have an account? </p>
           <button className="text-blue-500 hover:text-white ml-1">
             <a href="/signup"> Sign up</a>
           </button>
