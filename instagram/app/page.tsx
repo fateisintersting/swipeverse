@@ -1,4 +1,6 @@
 
+// pages/_app.tsx
+
 export default function Home() {
   return (
     <div>
